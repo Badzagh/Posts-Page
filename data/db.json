@@ -1,0 +1,14 @@
+{
+  "Posts": [
+    {
+      "title": "Post 2 Headline",
+      "body": "Sample small text. Lorem ipsum dolor sit amet.",
+      "id": 1
+    },
+    {
+      "title": "Post 2 Headline",
+      "body": "Sample small text. Lorem ipsum dolor sit amet.",
+      "id": 2
+    }
+  ]
+}

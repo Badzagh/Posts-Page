@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**/
+.header-container {
+    max-width: 1600px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    background-color:rgb(192, 187, 181, 0.5);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+h1 {
+    margin-left: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin-right: 50px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px 5px 0px;
+    
+}
+nav a:hover {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
+    
+}
+.post-list {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:rgb(192, 187, 181, 0.5);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.post-list-item {
+    max-width: 500px;
+    width: 100%;
+    height: 750px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 6px;
+}
+.post-list-item img {
+    max-width: 450px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    height: 350px;
+}
+.post-list-item h4 {
+    font-size: 25px;
+    text-align: center;
+}
+.post-list-item p {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    max-width: 450px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.post-list-item span {
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+.post-list-item button {
+    margin-bottom: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(94, 125, 226);
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.post-list-item button:active {
+    background-color: rgb(60, 89, 182);
+}
+.post-list-item:hover {
+    background-color: linen;
+}
+
+/**/
+.form-container {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    background-color:rgb(192, 187, 181, 0.5);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.form-container h2 {
+    font-size: 25px;
+    padding-top: 40px;
+    margin-left: 10%;
+}
+form {
+    padding-top: 40px;
+    padding-bottom: 240px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+form label {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+form input {
+    border: none;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form textarea {
+    border: none;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+form button {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: rgb(94, 125, 226);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form button:active {
+    background-color: rgb(60, 89, 182);
+}
+
+@media (max-width: 500px) {
+    form input { width: 300px;}
+    form textarea { width: 300px;}
+}
